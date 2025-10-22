@@ -1,0 +1,20 @@
+import java.util.Scanner;
+public class small_miss_num {
+    public static void main (int[]arr){
+        Arrays.sort(arr);
+    int smallest = 1;// start from 1
+    for(int num : arr){
+        if(num == smallest){
+            smallest++;
+        }else if (num  > smallest){
+            break;
+
+        }
+    }    
+return smallest;
+    }
+    public static void main(string []args){
+        int[] arr = {2,4,6,1};
+        sYSTEM.OUT.PRINTLN(findSmallestMissing(arr));
+    }
+    }
